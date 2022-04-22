@@ -2,9 +2,39 @@
 
 .product {
   display: inline-block;
+
   border: 1px solid $seaShell;
   color: $mineShaft;
+  cursor: pointer;
 
+  &__top {
+    width: 284px;
+    height: 437px;
+    position: relative;
+  }
+
+  &__favorite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+
+  &-sale {
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    span {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      display: inline-block;
+      color: $white;
+      transform: rotate(315deg);
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
 
   &__bottom {
     padding: 8px;
@@ -24,53 +54,7 @@
   }
 
   &__img {
-    width: 287px;
-    height: 437px;
-  }
-}
-
-.colors {
-  &__item {
-    display: inline-block;
-    margin-right: 12px;
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-    opacity: 0.47;
-
-    &:nth-child(1) {
-      background-color: $seaNymph;
-    }
-
-    &:nth-child(2) {
-      background-color: $atlantis;
-    }
-
-    &:nth-child(3) {
-      background-color: $silk;
-      opacity: 1;
-    }
-
-    &:nth-child(4) {
-      background-color: $driftwood;
-      opacity: 1;
-    }
-
-    &:nth-child(5) {
-      background-color: $cornflowerBlue;
-    }
-
-    &:nth-child(6) {
-      background-color: $white;
-      border: 1px solid $alto;
-    }
-
-    &:nth-child(7) {
-      background-color: $codGray;
-    }
-
-    &:nth-child(8) {
-      background-color: $red;
-    }
+    width: 100%;
+    height: 100%;
   }
 }

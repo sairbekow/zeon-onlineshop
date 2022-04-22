@@ -1,0 +1,31 @@
+.float-button {
+  position: fixed;
+  bottom: 80px;
+  right: 190px;
+  width: 224px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all .3s;
+
+  &__item {
+    &:last-child {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-left: 5px;
+      margin-bottom: 15px;
+      height: 65px;
+    }
+  }
+
+  &__close {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

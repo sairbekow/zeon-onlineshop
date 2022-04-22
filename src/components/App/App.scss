@@ -18,17 +18,60 @@ $silver: #b9b9b9;
 $scorpion: #5b5B5b;
 $boulder: #7c7c7c;
 $royalBlue: #2f80ed;
-$alizarinCrimson: #e5271b;
+$alizarinCrimson: #e5271b; //cart button
 $altoLight: #e0e0e0;
+$galery: #eee;
+$doveGray: #6a6a6a; //productInfo
+$gray: #808080; //order
+$mercury: #e7e7e7;
+
+
+.app-wrapper {
+  color: $mineShaft;
+  margin: 0 auto;
+}
 
 .container {
   margin: 0 auto;
-  max-width: 1366px;
-  padding: 0 99px;
+  max-width: 1198px;
+  padding: 0 15px;
 }
 
+.title {
+  color: $mineShaft;
+  font-weight: 500;
+  font-size: 24px;
+}
 
+.more-btn {
+  padding: 8px 38px;
+  background-color: $heavyMetal;
+  border: 0;
+  color: $white;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: center;
+}
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.btn {
+  padding: 14px 0;
+  background-color: $heavyMetal;
+  width: 100%;
+  font-size: 14px;
+  color:$white;
+}
 
 
 

@@ -1,0 +1,32 @@
+@import "../App/App";
+
+.thanks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__inner {
+    width: 288px;
+    height: 246px;
+    padding: 24px 16px;
+    background-color: $white;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__btn  {
+    margin-top: 16px;
+  }
+}

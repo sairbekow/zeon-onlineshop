@@ -1,3 +1,5 @@
+@import '/src/components/App/App';
+
 *,
 *::after,
 *::before {
@@ -10,15 +12,20 @@
 
 body {
   margin: 0;
+  background-color: $alabaster;
   line-height: 1;
   font-size: 16px;
-  font-family: 'Montserratt', sans-serif;
+  color: inherit;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 button {
-  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 
 input {
@@ -26,10 +33,11 @@ input {
   outline: 0;
 }
 
-ul, ol {
+ul, ol, li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
 }
+

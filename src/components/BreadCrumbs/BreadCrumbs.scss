@@ -1,0 +1,22 @@
+@import '../App/App';
+
+.bread-crumbs {
+  padding: 22px 0;
+  background-color: $white;
+
+  &__list {
+    font-weight: 500;
+    display: flex;
+  }
+
+  &__item {
+    cursor: pointer;
+    span {
+      margin: 0 16px;
+    }
+
+    &_acitve {
+      color: $dustyGray;
+    }
+  }
+}

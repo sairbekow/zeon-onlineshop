@@ -1,0 +1,47 @@
+@import "../App/App";
+
+.question {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 416px;
+  padding: 32px;
+  background-color: $white;
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 12px;
+  }
+
+  &__input-block {
+    padding: 10px 12px;
+    border: 1px solid $alto;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    img {
+      margin-right: 8px;
+
+      &:first-child{
+        margin-right: 13px;
+      }
+    }
+  }
+
+  &__input {
+    &::placeholder {
+      font-size: 14px;
+      color: $silver;
+    }
+  }
+}

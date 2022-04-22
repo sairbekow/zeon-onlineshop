@@ -1,4 +1,5 @@
 import './Footer.scss'
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,19 +15,19 @@ const Footer = () => {
               <h5>Компания</h5>
               <ul className="company__list">
                 <li className="company__item">
-                  <a href="#" className="company__link">
+                  <Link to="about" className="company__link">
                     О нас
-                  </a>
+                  </Link>
                 </li>
                 <li className="company__item">
-                  <a href="#" className="company__link">
+                  <Link to="news" className="company__link">
                     Новости
-                  </a>
+                  </Link>
                 </li>
                 <li className="company__item">
-                  <a href="#" className="company__link">
+                  <Link to="help" className="company__link">
                     Помощь
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -48,10 +49,8 @@ const Footer = () => {
                 </a>
               </li>
               <li className="contacts__item">
-                <a href="#" className="contacts__link">
                   <img src="img/message.svg" alt="#"/>
                   mail@gmail.com
-                </a>
               </li>
             </ul>
           </div>
@@ -60,20 +59,20 @@ const Footer = () => {
             <h5>Мы в социальных сетях</h5>
             <ul className="networks__list">
               <li className="networks__item">
-                <a href="#" className="networks__link">
+                <a href="https://www.instagram.com/sairbekow/" className="networks__link">
                   <img src="img/instagram.svg" alt="#"/>
                   Instagram
                 </a>
               </li>
               <li className="networks__item">
-                <a href="#" className="networks__link">
-                  <img src="img/telegram.svg" alt="#"/>
+                <a href="https://t.me/sairbekowargen" className="networks__link">
+                  <img src="img/telegram-footer.svg" alt="#"/>
                   Telegram
                 </a>
               </li>
               <li className="networks__item">
-                <a href="#" className="networks__link">
-                  <img src="img/whatsapp.svg" alt="#"/>
+                <a href="https://www.whatsapp.com/?lang=ru" className="networks__link">
+                  <img src="img/whatsapp-footer.svg" alt="#"/>
                   Whatsapp
                 </a>
               </li>

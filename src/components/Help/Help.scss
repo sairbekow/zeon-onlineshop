@@ -1,0 +1,48 @@
+@import "../App/App";
+
+.help {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+
+  &__img-block {
+    width: 500px;
+    height: 500px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    width: 644px;
+    height: 644px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+    background-color: $white;
+  }
+
+  &__answer {
+    padding: 16px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    background-color: $white;
+  }
+}

@@ -2,6 +2,7 @@
 
 .header {
   background-color: $white;
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -9,12 +10,16 @@
     padding: 22px 0;
     font-size: 17px;
     color: $mineShaft;
+    border-bottom: 1px solid $galery;
   }
 
   &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid $galery;
+
   }
 }
 
@@ -63,24 +68,41 @@
   }
 }
 
-.cart {
-  padding-left: 20px;
-}
-
-.favorite {
-  padding-right: 20px;
-  border-right: 1px solid $altoLight;
-}
-
 .nav-panel {
   &__list {
     display: flex;
     align-items: center;
   }
 
+  &__item {
+    &:nth-child(1) {
+      padding-right: 20px;
+      border-right: 1px solid $altoLight;
+    }
+    &:nth-child(2) {
+      padding-left: 20px;
+    }
+  }
+
   &__link {
     display: flex;
     align-items: center;
+  }
+  &__img-block {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -2px;
+      right: 11px;
+      display: inline-block;
+      border-radius: 50%;
+      width: 9px;
+      height: 9px;
+      background-color: $alizarinCrimson;
+
+
+    }
 
     img {
       margin-right: 11px;

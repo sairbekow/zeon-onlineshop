@@ -1,0 +1,40 @@
+@import "../../components/App/App";
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+
+  &__galery {
+    display: flex;
+    height: 845px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+
+    img {
+      width: 327px;
+      height: 410px;
+    }
+  }
+
+  &__description {
+    width: 417px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    color: $dustyGray;
+    font-size: 15px;
+    line-height: 160%;
+  }
+
+
+}

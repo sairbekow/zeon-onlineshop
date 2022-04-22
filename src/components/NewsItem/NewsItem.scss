@@ -1,0 +1,36 @@
+@import '../App/App';
+
+.news-item {
+  &__inner {
+    width: 1168px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: $white;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.02);
+  }
+
+  &__img-block {
+    width: 226px;
+    height: 226px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    color: $mineShaft;
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    color: $scorpion;
+    width: 894px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 165%;
+  }
+}

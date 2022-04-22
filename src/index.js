@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { initializeApp } from "firebase/app";
+import {BrowserRouter} from "react-router-dom";
+import {initializeApp} from "firebase/app";
+import {getDatabase} from "firebase/database";
 
-import './index.css';
+
 import App from './components/App/App';
 
-export const firebaseConfig = {
+import './index.scss';
+
+const database = getDatabase();
+
+const firebaseConfig = {
   apiKey: "AIzaSyA5SEqSRgW42WRCRR9li5cQ12htVczm5_8",
   authDomain: "zeon-onlineshop.firebaseapp.com",
   projectId: "zeon-onlineshop",
@@ -20,6 +26,8 @@ initializeApp(firebaseConfig);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,0 +1,20 @@
+@import "../App/App";
+
+.wrapper {
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: $dustyGray;
+    margin-bottom: 16px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

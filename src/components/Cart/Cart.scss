@@ -1,0 +1,55 @@
+@import "../App/App";
+
+
+.cart {
+
+  &__inner {
+    display: flex;
+    margin-top: 11px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.sum {
+  height: 293px;
+  padding: 24px;
+  background: $white;
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  &__list {
+    font-size: 14px;
+  }
+
+  &__item {
+    color: $dustyGray;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    span {
+      color: $mineShaft;
+    }
+
+    &:nth-child(4) {
+      padding-bottom: 24px;
+      border-bottom: 1px dashed $silver;
+    }
+  }
+
+  &__btn {
+    padding: 14px 107px;
+    margin-top: 16px;
+    color: $white;
+    white-space: nowrap;
+    font-size: 14px;
+    background-color: $alizarinCrimson;
+  }
+}

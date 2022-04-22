@@ -1,0 +1,47 @@
+@import "../App/App";
+
+.colors {
+  &__item {
+    display: inline-block;
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    opacity: 0.47;
+
+    &:nth-child(1) {
+      background-color: $seaNymph;
+    }
+
+    &:nth-child(2) {
+      background-color: $atlantis;
+    }
+
+    &:nth-child(3) {
+      background-color: $silk;
+      opacity: 1;
+    }
+
+    &:nth-child(4) {
+      background-color: $driftwood;
+      opacity: 1;
+    }
+
+    &:nth-child(5) {
+      background-color: $cornflowerBlue;
+    }
+
+    &:nth-child(6) {
+      background-color: $white;
+      border: 1px solid $alto;
+    }
+
+    &:nth-child(7) {
+      background-color: $codGray;
+    }
+
+    &:nth-child(8) {
+      background-color: $red;
+    }
+  }
+}
