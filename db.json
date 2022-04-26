@@ -1,0 +1,361 @@
+{
+  "slider": [
+    {
+      "id": 1,
+      "image": "slider_1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "slider_1.jpg"
+    },
+    {
+      "id": 3,
+      "image": "slider_1.jpg"
+    },
+    {
+      "id": 4,
+      "image": "slider_1.jpg"
+    }
+  ],
+
+  "bestsellers": [
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_1.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 1
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_1.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 2
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_1.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 3
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_1.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 4
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_1.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 5
+    }
+  ],
+  "novelties": [
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 1
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 2
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 3
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 4
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 5
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 6
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 7
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 8
+    },
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "colors": [
+        "#73a39d",
+        "#84CC4c",
+        "#b5a8a1",
+        "#ab844a",
+        "#6977f0",
+        "#fff",
+        "#d1d1d1",
+        "#141414",
+        "#ff0000"
+      ],
+      "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "title": "Вечернее платье",
+      "price": 1234,
+      "size": "42-52",
+      "image": "bestsellers_3.jpg",
+      "sale": 20,
+      "color": "#73a39d",
+      "amount": 1,
+      "id": 1
+    }
+  ],
+  "advantages": [
+    {
+      "id": 1,
+      "title": "Удобные способы оплаты",
+      "text": "Мы предлагаем возможность безналичной оплаты",
+      "image": "advantages_1.svg"
+    },
+    {
+      "id": 2,
+      "title": "Cвоевремнная доставка",
+      "text": "100% гарантия возврата товара - 14 дней на возврат, без скандалов и истерик.",
+      "image": "advantages_2.svg"
+    },
+    {
+      "id": 3,
+      "title": "Профессиональная консультация",
+      "text": "Мы проконсультируем и индивидуально подойдем к Вашему заказу",
+      "image": "advantages_3.svg"
+    },
+    {
+      "id": 4,
+      "title": "Акции и бонусы для покупателей",
+      "text": "Промокоды со скидками для постоянных клиентов, акции на новые позиции",
+      "image": "advantages_4.svg"
+    }
+  ],
+  "collection": [
+    {
+      "id": 1,
+      "image": "collection_1.jpg",
+      "title": "Повседневная одежда"
+    },
+    {
+      "id": 2,
+      "image": "collection_2.jpg",
+      "title": "Одежда на пляж"
+    },
+    {
+      "id": 3,
+      "image": "collection_3.jpg",
+      "title": "Юбки"
+    },
+    {
+      "id": 4,
+      "image": "collection_4.jpg",
+      "title": "Джинсы"
+    },
+    {
+      "id": 5,
+      "image": "collection_4.jpg",
+      "title": "Джинсы"
+    },
+    {
+      "id": 6,
+      "image": "collection_4.jpg",
+      "title": "Джинсы"
+    }
+  ]
+}

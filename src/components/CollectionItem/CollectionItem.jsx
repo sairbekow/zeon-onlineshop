@@ -1,11 +1,11 @@
 import "./CollectionItem.scss"
 
-const CollectionItem = () => {
+const CollectionItem = ({image, title}) => {
   return (
     <li className="collection-item">
       <div className="collection-item__top">
-        <img className="collection-item__img" src="img/collection_2.jpg" alt="collection type"/>
-        <p className="collection-item__title">Повседневная одежда</p>
+        <img className="collection-item__img" src={`img/${image}`} alt="collection type"/>
+        <p className="collection-item__title">{title}</p>
       </div>
       <div className="collection-item__bottom">
         <button className="collection-item__btn">

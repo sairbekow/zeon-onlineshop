@@ -1,38 +1,33 @@
 import Wrapper from "../Wrapper/Wrapper";
 
 import './Advantages.scss'
+import axios from "axios";
+import {useEffect, useState} from "react";
 
 const Advantages = () => {
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/advantages')
+      .then(res => setItems(res.data))
+      .catch(error => console.log(error))
+  }, []);
+
   return (
     <div className="advantages" style={{'paddingTop': 44}}>
       <Wrapper title="Наши преимущества" center>
-        <div className="advantages__item">
-          <img src="img/advantages_1.svg" alt="coin" className="advantages__img"/>
-          <h4 className="advantages__title">Удобные способы оплаты</h4>
-          <p className="advantages__subtitle">
-            Мы предлагаем возможность безналичной оплаты
-          </p>
-        </div>
-        <div className="advantages__item">
-          <img src="img/advantages_2.svg" alt="coin" className="advantage__img"/>
-          <h4 className="advantages__title">Cвоевремнная доставка</h4>
-          <p className="advantages__subtitle">
-            100% гарантия возврата товара - 14 дней на возврат, без скандалов и истерик.
-          </p>
-        </div>
-        <div className="advantages__item">
-          <img src="img/advantages_3.svg" alt="coin" className="advantages__img"/>
-          <h4 className="advantages__title">Профессиональная консультация</h4>
-          <p className="advantages__subtitle">
-            Мы проконсультируем и индивидуально подойдем к Вашему заказу </p>
-        </div>
-        <div className="advantages__item">
-          <img src="img/advantages_4.svg" alt="coin" className="advantages__img"/>
-          <h4 className="advantages__title">Акции и бонусы для покупателей</h4>
-          <p className="advantages__subtitle">
-            Промокоды со скидками для постоянных клиентов, акции на новые позиции
-          </p>
-        </div>
+        {
+          items.map(item => (
+            <div key={item.id}
+                 className="advantages__item">
+              <img src={`img/${item.image}`} alt={item.image} className="advantages__img"/>
+              <h4 className="advantages__title">{item.title}</h4>
+              <p className="advantages__subtitle">
+                {item.text}
+              </p>
+            </div>
+          ))
+        }
       </Wrapper>
     </div>
   );

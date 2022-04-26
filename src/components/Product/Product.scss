@@ -2,10 +2,10 @@
 
 .product {
   display: inline-block;
-
   border: 1px solid $seaShell;
   color: $mineShaft;
   cursor: pointer;
+  background-color: $white;
 
   &__top {
     width: 284px;

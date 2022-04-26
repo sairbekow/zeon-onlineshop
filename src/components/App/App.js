@@ -1,7 +1,5 @@
 import {Route, Routes} from "react-router-dom"
-import {useState, useEffect, createContext} from "react"
-import { getDatabase, ref, set } from "firebase/database"
-
+import {useState, createContext} from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 import Collection from "../Collection"
@@ -17,26 +15,32 @@ import Favorite from "../../pages/Favorite"
 
 import './App.scss';
 
+const StoreContext = createContext([])
+
 const App = () => {
+  const [cartItems, setCartItems] = useState([])
+  const [favoriteItems, setFavoriteItems] = useState([])
 
   return (
     <div className="app-wrapper">
-      <Header/>
-      <BreadCrumbs/>
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="about" element={<About/>}/>
-          <Route path="cart" element={<Cart/>}/>
-          <Route path="favorite" element={<Favorite/>}/>
-          <Route path="news" element={<News/>}/>
-          <Route path="collection" element={<Collection/>}/>
-          <Route path="publicOffer" element={<PublicOffer/>}/>
-          <Route path="productInfo" element={<ProductInfo/>}/>
-          <Route path="help" element={<Help/>}/>
-        </Routes>
-      </div>
-      <Footer/>
+      <StoreContext.Provider value={{cartItems, favoriteItems}}>
+        <Header/>
+        <BreadCrumbs/>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="about" element={<About/>}/>
+            <Route path="cart" element={<Cart/>}/>
+            <Route path="favorite" element={<Favorite/>}/>
+            <Route path="news" element={<News/>}/>
+            <Route path="collection" element={<Collection/>}/>
+            <Route path="publicOffer" element={<PublicOffer/>}/>
+            <Route path="productInfo" element={<ProductInfo/>}/>
+            <Route path="help" element={<Help/>}/>
+          </Routes>
+        </div>
+        <Footer/>
+      </StoreContext.Provider>
     </div>
   );
 };

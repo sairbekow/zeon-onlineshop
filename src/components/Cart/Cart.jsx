@@ -4,16 +4,25 @@ import Order from "../Order/Order"
 import './Cart.scss'
 import Thanks from "../Thanks/Thanks";
 import Question from "../Question/Question";
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 const Cart = () => {
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+    axios.get('  http://localhost:3001/cart')
+      .then(res => setItems(res.data))
+  }, []);
+
   return (
     <div className="cart">
 
       <div className="cart__inner">
         <ul className="cart__list">
-          <CartItem/>
-          <CartItem/>
-          <CartItem/>
+          {items.map(item => (
+            <CartItem {...item}/>
+          ))}
         </ul>
         <div className="sum">
           <h5 className="sum__title">

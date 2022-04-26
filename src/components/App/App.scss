@@ -53,6 +53,10 @@ $mercury: #e7e7e7;
   margin: 24px auto 0;
   display: flex;
   justify-content: center;
+
+  &:disabled {
+    background-color: $dustyGray;
+  }
 }
 
 .overlay {

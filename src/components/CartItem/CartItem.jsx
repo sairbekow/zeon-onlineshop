@@ -1,28 +1,33 @@
 import './CartItem.scss'
+import {useEffect} from "react";
+import axios from "axios";
 
-const CartItem = () => {
+const CartItem = ({title, price, size, color, image, sale, amount}) => {
+
   return (
     <li className="cart-item">
       <div className="cart-item__inner">
         <div className="cart-item__img-block">
-          <img src="img/cart_1.jpg" alt="dress"/>
+          <img src={`img/${image}`} alt="dress"/>
         </div>
         <div className="cart-item__content">
           <h4 className="cart-item__title">
-            Вечернее платье
+            {title}
           </h4>
           <div className="cart-item__params">
             <div className="cart-item__size">
               Размер:
-              <span>42-50</span>
+              <span>{size}</span>
             </div>
             <div className="cart-item__color">
               <p>Цвет:</p>
-              <div><span/></div>
+              <div>
+                <span style={{"backgroundColor": color}}/>
+              </div>
             </div>
             <p className="cart-item__price">
-              1 365 сом
-              <span>1 365 сом</span>
+              {price} сом
+              <span>{sale && Math.ceil(price - ((price * sale) / 100))} сом</span>
             </p>
           </div>
           <div className="cart-item__amount-block">
@@ -34,7 +39,7 @@ const CartItem = () => {
               </svg>
 
             </button>
-            1
+            {amount}
             <button>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path

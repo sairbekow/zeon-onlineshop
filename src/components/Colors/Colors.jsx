@@ -1,17 +1,21 @@
 import './Colors.scss'
+import {useState} from "react";
 
-const Colors = () => {
+const Colors = ({colors, size}) => {
+
   return (
     <div className="colors">
       <ul className="colors__list">
-        <li className="colors__item"/>
-        <li className="colors__item"/>
-        <li className="colors__item"/>
-        <li className="colors__item"/>
-        <li className="colors__item"/>
-        <li className="colors__item"/>
-        <li className="colors__item"/>
-        <li className="colors__item"/>
+        {colors && colors.map((color, id) => (
+          <li key={id}
+              className="colors__item"
+              style={color === "#fff" ? {
+                "backgroundColor": color,
+                "borderWidth": 1,
+                "borderStyle": "solid",
+                "borderColor": "#d1d1d1"
+              } : {"backgroundColor": color}}/>
+        ))}
       </ul>
     </div>
   );

@@ -24,7 +24,7 @@ const Product = ({title, price, size, colors, image, sale}) => {
           <p className="product__size">
             Размер: {size}
           </p>
-          <Colors/>
+          <Colors colors={colors}/>
         </div>
       </Link>
     </li>
