@@ -25,7 +25,7 @@ const SlickSlider = () => {
     <>
       <Slider {...settings}>
         {items.map(item => (
-            <div>
+            <div key={item.id}>
               <img height={488} src={`img/${item.image}`} alt={item.image}/>
             </div>
           )

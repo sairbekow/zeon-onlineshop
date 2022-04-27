@@ -8,10 +8,12 @@ const Product = ({title, price, size, colors, image, sale}) => {
       <Link to="productInfo">
         <div className="product__top">
           <img src="img/red-heart.svg" alt="heart" className="product__favorite"/>
-          <div className="product-sale">
-            <span>{sale}%</span>
-            <img src="img/sale-triangle.svg" alt="sale triangle"/>
-          </div>
+          {sale ? (
+            <div className="product-sale" >
+              <span>{sale}%</span>
+              <img src="img/sale-triangle.svg" alt="sale triangle"/>
+            </div>
+          ): null}
           <img src={`img/${image}`} alt="product" className="product__img"/>
         </div>
         <div className="product__bottom">

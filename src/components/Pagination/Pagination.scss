@@ -1,9 +1,11 @@
 @import '../App/App';
 
 .pagination {
+  margin-top: 16px;
   &__list {
     display: flex;
     justify-content: end;
+    margin-left: auto;
     gap: 12px;
   }
 

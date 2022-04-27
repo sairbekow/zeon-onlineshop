@@ -1,8 +1,8 @@
 import Bestsellers from "../components/Bestsellers";
 import Novelties from "../components/Novelties";
-import Collection from "../components/Collection";
 import Advantages from "../components/Advantages/Advantages";
 import SlickSlider from "../components/SlickSlider";
+import HomeCollection from "../components/HomeCollection";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <SlickSlider/>
       <Bestsellers/>
       <Novelties/>
-      <Collection/>
+      <HomeCollection center/>
       <Advantages/>
     </div>
   );

@@ -1,6 +1,6 @@
 import './PublicOffer'
 
-const PublicOffer = () => {
+const PublicOffer = (props) => {
   return (
     <div className="public-offer">
       <div className="public-offer__inner">

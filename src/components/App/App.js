@@ -2,7 +2,7 @@ import {Route, Routes} from "react-router-dom"
 import {useState, createContext} from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
-import Collection from "../Collection"
+import Collection from "../../pages/Collection"
 import About from "../../pages/About/About"
 import News from "../News"
 import Help from "../Help/Help"
@@ -34,7 +34,7 @@ const App = () => {
             <Route path="favorite" element={<Favorite/>}/>
             <Route path="news" element={<News/>}/>
             <Route path="collection" element={<Collection/>}/>
-            <Route path="publicOffer" element={<PublicOffer/>}/>
+            <Route path="publicOffer" element={<PublicOffer />}/>
             <Route path="productInfo" element={<ProductInfo/>}/>
             <Route path="help" element={<Help/>}/>
           </Routes>
