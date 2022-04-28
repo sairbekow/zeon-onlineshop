@@ -2,7 +2,6 @@
 
 #dev
 /.idea
-public/img
 
 # dependencies
 /node_modules

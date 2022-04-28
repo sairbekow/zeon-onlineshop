@@ -5,12 +5,13 @@ import CollectionItem from "../components/CollectionItem/CollectionItem";
 import Wrapper from "../components/Wrapper/Wrapper";
 import {_apiBase} from "../index";
 import Pagination from "../components/Pagination/Pagination";
+import {Link} from "react-router-dom";
 
-const Collection = () => {
+const Collection = ({onCollectionSelected}) => {
   const [items, setItems] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
   const [pageCount, setPageCount] = useState(0)
-  const [itemsPerPage] = useState(4)
+  const [itemsPerPage] = useState(8)
 
   useEffect(() => {
     axios.get(`${_apiBase}/collection?_page=${currentPage}&_limit=${itemsPerPage}`)
@@ -25,7 +26,10 @@ const Collection = () => {
     <div className="home-collection">
       <Wrapper title="Колекция">
         {items.map(item => (
-          <CollectionItem key={item.id} {...item}/>
+          <Link key={item.id} to={`products/${item.id}`}>
+            <CollectionItem onCollectionSelected={onCollectionSelected}
+                            {...item}/>
+          </Link>
         ))}
       </Wrapper>
       <Pagination itemsPerPage={itemsPerPage}

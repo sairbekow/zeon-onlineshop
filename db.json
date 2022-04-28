@@ -329,27 +329,417 @@
     {
       "id": 1,
       "image": "collection_1.jpg",
-      "title": "Повседневная одежда"
+      "title": "Повседневная одежда",
+      "items": [
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 1
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 2
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 3
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 4
+        }
+      ]
     },
     {
       "id": 2,
       "image": "collection_2.jpg",
-      "title": "Одежда на пляж"
+      "title": "Одежда на пляж",
+      "items": [
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 1
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 2
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 3
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 4
+        }
+      ]
     },
     {
       "id": 3,
       "image": "collection_3.jpg",
-      "title": "Юбки"
+      "title": "Юбки",
+      "items": [
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 1
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 2
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 3
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 4
+        }
+      ]
     },
     {
       "id": 4,
       "image": "collection_4.jpg",
-      "title": "Джинсы"
+      "title": "Джинсы",
+      "items": [
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 1
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 2
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 3
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 4
+        }
+      ]
     },
     {
       "id": 5,
       "image": "collection_4.jpg",
-      "title": "Джинсы"
+      "title": "Джинсы",
+      "items": [
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 1
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 2
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 3
+        },
+        {
+          "title": "Вечернее платье",
+          "price": 1234,
+          "size": "42-52",
+          "image": "bestsellers_3.jpg",
+          "sale": 20,
+          "colors": [
+            "#73a39d",
+            "#84CC4c",
+            "#b5a8a1",
+            "#ab844a",
+            "#6977f0",
+            "#fff",
+            "#d1d1d1",
+            "#141414",
+            "#ff0000"
+          ],
+          "id": 4
+        }
+      ]
     },
     {
       "id": 6,

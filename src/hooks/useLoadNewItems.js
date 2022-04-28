@@ -7,14 +7,16 @@ const useLoadItems = (source) => {
   const [currentPage, setCurrentPage] = useState(1)
   const [loading, setLoading] = useState(false)
   const [itemsEnded, setItemsEnded] = useState(false)
-  const [offset] = useState(4)
+  const [visibleItems] = useState(4)
+  const [itemsPerPage] = useState(4)
   const [error, setError] = useState('')
 
   useEffect(() => {
-    onRequestItems()
+    onRequestItems(true)
   }, [])
 
-  const onRequestItems = () => {
+  const onRequestItems = (initial) => {
+    const offset = initial === true ? visibleItems : itemsPerPage
     setLoading(true)
     axios.get(`${_apiBase}/${source}?_page=${currentPage}&_limit=${offset}`)
       .then(onItemsLoaded)
@@ -24,7 +26,7 @@ const useLoadItems = (source) => {
 
   const onItemsLoaded = (newItems) => {
     let ended = false;
-    if (newItems.data.length < offset) {
+    if (newItems.data.length < visibleItems) {
       ended = true;
     }
 

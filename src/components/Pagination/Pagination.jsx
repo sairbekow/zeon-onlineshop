@@ -21,7 +21,7 @@ const Pagination = ({pageCount, currentPage, setCurrentPage}) => {
   const Steps = () => {
     const lastStep = pageCount
     const visibleSteps = 4
-    const firstVisibleStep = currentPage < 3 ? 0 : currentPage - 3
+    const firstVisibleStep = currentPage < (visibleSteps - 1) ? 0 : currentPage - (visibleSteps - 1)
     const lastVisibleStep = firstVisibleStep + visibleSteps
 
     const pageCountArray = Array.from({length: pageCount})
@@ -41,7 +41,7 @@ const Pagination = ({pageCount, currentPage, setCurrentPage}) => {
             ))
         }
         {
-          currentPage <= lastStep - 2 && (
+          currentPage <= lastStep - (visibleSteps - 2) && (
             <li className="pagination__item">
               <button className="pagination__btn">
                 ...
@@ -49,7 +49,7 @@ const Pagination = ({pageCount, currentPage, setCurrentPage}) => {
             </li>)
         }
         {
-          currentPage <= lastStep - 2 && (
+          currentPage <= lastStep - (visibleSteps - 2) && (
             <li className={`pagination__item ${lastStep === currentPage ? 'pagination__item_active' : ''}`}>
               <button className="pagination__btn" onClick={() => onPagination(pageCount)}>
                 {pageCount}

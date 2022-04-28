@@ -1,4 +1,5 @@
 import "./CollectionItem.scss"
+import {Link} from "react-router-dom";
 
 const CollectionItem = ({image, title}) => {
   return (

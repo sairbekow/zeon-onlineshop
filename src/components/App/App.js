@@ -12,8 +12,10 @@ import ProductInfo from "../ProductInfo/ProductInfo"
 import Cart from "../Cart/Cart"
 import BreadCrumbs from "../BreadCrumbs/BreadCrumbs"
 import Favorite from "../../pages/Favorite"
+import CollectionProducts from "../CollectionProducts"
 
-import './App.scss';
+
+import './App.scss'
 
 const StoreContext = createContext([])
 
@@ -31,18 +33,19 @@ const App = () => {
             <Route path="/" element={<Home/>}/>
             <Route path="about" element={<About/>}/>
             <Route path="cart" element={<Cart/>}/>
+            <Route path="product_info" element={<ProductInfo/>}/>
             <Route path="favorite" element={<Favorite/>}/>
             <Route path="news" element={<News/>}/>
             <Route path="collection" element={<Collection/>}/>
-            <Route path="publicOffer" element={<PublicOffer />}/>
-            <Route path="productInfo" element={<ProductInfo/>}/>
+            <Route path="collection/products/:id" element={<CollectionProducts/>}/>
+            <Route path="public_offer" element={<PublicOffer/>}/>
             <Route path="help" element={<Help/>}/>
           </Routes>
         </div>
         <Footer/>
       </StoreContext.Provider>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

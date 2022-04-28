@@ -3,17 +3,19 @@ import {Link} from "react-router-dom"
 import Colors from "../Colors/Colors"
 
 const Product = ({title, price, size, colors, image, sale}) => {
+  const salePrice = Math.round((price * (100 - sale)) / 100)
+  console.log(image)
   return (
     <li className="product">
       <Link to="productInfo">
         <div className="product__top">
           <img src="img/red-heart.svg" alt="heart" className="product__favorite"/>
           {sale ? (
-            <div className="product-sale" >
+            <div className="product-sale">
               <span>{sale}%</span>
               <img src="img/sale-triangle.svg" alt="sale triangle"/>
             </div>
-          ): null}
+          ) : null}
           <img src={`img/${image}`} alt="product" className="product__img"/>
         </div>
         <div className="product__bottom">
@@ -21,7 +23,13 @@ const Product = ({title, price, size, colors, image, sale}) => {
             {title}
           </h4>
           <p className="product__price">
-            {price} cом
+            {sale ? (
+              <>
+                {salePrice} сом
+                <span>{price} сом</span>
+              </>
+            ) : <>{price} сом</>
+            }
           </p>
           <p className="product__size">
             Размер: {size}
