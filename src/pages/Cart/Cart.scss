@@ -6,6 +6,7 @@
   &__inner {
     display: flex;
     margin-top: 11px;
+    justify-content: space-between;
   }
 
   &__list {
@@ -16,7 +17,6 @@
 }
 
 .sum {
-  height: 293px;
   padding: 24px;
   background: $white;
 

@@ -11,6 +11,14 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
+  customPaging: () => (
+    <div style={{
+      width: "8px",
+      height: "8px",
+      border: "1px solid #808080",
+      borderRadius: "50%",
+    }}/>
+  )
 };
 
 const SlickSlider = () => {

@@ -1,6 +1,6 @@
 @import '../App/App';
 
-.product-info {
+.product-detail {
   margin-top: 10px;
 
   &__inner {
@@ -9,16 +9,7 @@
   }
 
 
-  &__list-top {
-    flex-wrap: wrap;
-
-    li {
-      width: 308px;
-      height: 492px;
-    }
-  }
-
-  ul {
+  &__list {
     width: 624px;
     display: flex;
     gap: 8px;
@@ -29,12 +20,24 @@
     }
   }
 
+
+  &__list-top {
+    flex-wrap: wrap;
+
+    li {
+      width: 308px;
+      cursor: pointer;
+
+    }
+  }
+
   &__list-bottom {
     margin-top: 8px;
 
     li {
       width: 150px;
-      height: 240px;
+      cursor: pointer;
+
     }
   }
 
